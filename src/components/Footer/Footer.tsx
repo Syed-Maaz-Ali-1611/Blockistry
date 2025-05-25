@@ -65,13 +65,13 @@ const Footer = () => {
                                         </form>
                                     </div>
                                     <div className="list-social flex items-center gap-6 mt-4">
-                                        <Link href={'https://www.facebook.com/'} target='_blank'>
+                            <Link href={'https://www.facebook.com/blockistry.pk'} target='_blank'>
                                             <div className="icon-facebook text-2xl text-black"></div>
                                         </Link>
-                                        <Link href={'https://www.instagram.com/'} target='_blank'>
+                            <Link href={'https://www.instagram.com/block.istry?utm_source=qr&igsh=MXVmcHhpNXkxNzJvcw=='} target='_blank'>
                                             <div className="icon-instagram text-2xl text-black"></div>
                                         </Link>
-                                        <Link href={'https://www.twitter.com/'} target='_blank'>
+                                        {/* <Link href={'https://www.twitter.com/'} target='_blank'>
                                             <div className="icon-twitter text-2xl text-black"></div>
                                         </Link>
                                         <Link href={'https://www.youtube.com/'} target='_blank'>
@@ -79,7 +79,7 @@ const Footer = () => {
                                         </Link>
                                         <Link href={'https://www.pinterest.com/'} target='_blank'>
                                             <div className="icon-pinterest text-2xl text-black"></div>
-                                        </Link>
+                                        </Link> */}
                                     </div>
                                 </div>
                             </div>
