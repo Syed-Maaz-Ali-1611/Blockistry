@@ -588,11 +588,11 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                         >
                                             Shop
                                         </Link>
-                                        <div className="mega-menu absolute top-[74px] left-0 bg-white w-screen">
+                                        {/* <div className="mega-menu absolute top-[74px] left-0 bg-white w-screen">
                                             <div className="container">
                                                 <div className="flex justify-between py-8">
                                                     <div className="nav-link basis-1/2 flex justify-between pr-12">
-                                                        {/* <div className="nav-item">
+                                                        <div className="nav-item">
                                                             <div className="text-button-uppercase pb-2">Shop Features</div>
                                                             <ul>
                                                                 <li>
@@ -628,8 +628,8 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                     </Link>
                                                                 </li>
                                                             </ul>
-                                                        </div> */}
-                                                        {/* <div className="nav-item">
+                                                        </div>
+                                                        <div className="nav-item">
                                                             <div className="text-button-uppercase pb-2">Shop Features</div>
                                                             <ul>
                                                                 <li>
@@ -665,7 +665,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                     </Link>
                                                                 </li>
                                                             </ul>
-                                                        </div> */}
+                                                        </div>
                                                         <div className="nav-item">  
                                                             <div className="text-button-uppercase pb-2">Shop Layout</div>
                                                             <ul>
@@ -711,7 +711,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        {/* <div className="nav-item">
+                                                        <div className="nav-item">
                                                             <div className="text-button-uppercase pb-2">Products Pages</div>
                                                             <ul>
                                                                 <li>
@@ -771,19 +771,19 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                     </Link>
                                                                 </li>
                                                             </ul>
-                                                        </div> */}
+                                                        </div>
                                                     </div>
-                                                    {/* <div className="recent-product pl-2.5 basis-1/2">
+                                                    <div className="recent-product pl-2.5 basis-1/2">
                                                         <div className="text-button-uppercase pb-2">Recent Products</div>
                                                         <div className="list-product hide-product-sold  grid grid-cols-2 gap-5 mt-3">
                                                             {productData.filter(item => item.action === 'add to cart').slice(0, 2).map((prd, index) => (
                                                                 <Product key={index} data={prd} type='grid' />
                                                             ))}
                                                         </div>
-                                                    </div> */}
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </li>
 
 
@@ -1015,7 +1015,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                         About Us
                                                     </Link>
                                     </li>
-                                       <li className='h-full relative'>
+                                    <li className='h-full relative'>
                                                     <Link href="/pages/contact" className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${pathname.includes('/pages') ? 'active' : ''}`}>
                                                         Contact Us
                                                     </Link>
@@ -1073,7 +1073,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                 <div className="line absolute bg-line w-px h-6 -right-6"></div>
                             </div>
                             <div className="list-action flex items-center gap-4">
-                                <div className="user-icon flex items-center justify-center cursor-pointer">
+                                {/* <div className="user-icon flex items-center justify-center cursor-pointer">
                                     <Icon.User size={24} color='black' onClick={handleLoginPopup} />
                                     <div
                                         className={`login-popup absolute top-[74px] w-[320px] p-7 rounded-xl bg-white box-shadow-small 
@@ -1086,7 +1086,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                         <div className="bottom pt-4 border-t border-line"></div>
                                         <Link href={'#!'} className='body1 hover:underline'>Support</Link>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="max-md:hidden wishlist-icon flex items-center cursor-pointer" onClick={openModalWishlist}>
                                     <Icon.Heart size={24} color='black' />
                                 </div>
