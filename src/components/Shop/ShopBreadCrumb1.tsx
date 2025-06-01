@@ -65,7 +65,6 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
         setCurrentPage(0);
     }
 
-
     // Filter product
     let filteredData = data.filter(product => {
         let isShowOnlySaleMatched = true;
@@ -117,7 +116,6 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
         return isShowOnlySaleMatched && isDatagenderMatched && isDataCategoryMatched && isDataTypeMatched && isTypeMatched && isSizeMatched && isColorMatched && isBrandMatched && isPriceRangeMatched
     })
 
-
     // Create a copy array filtered to sort
     let sortedData = [...filteredData];
 
@@ -146,7 +144,6 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
     const selectedColor = color
     const selectedBrand = brand
 
-
     if (filteredData.length === 0) {
         filteredData = [{
             id: 'no-data',
@@ -173,7 +170,6 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
         }];
     }
 
-
     // Find page number base on filteredData
     const pageCount = Math.ceil(filteredData.length / productsPerPage);
 
@@ -190,6 +186,12 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
     } else {
         currentProducts = []
     }
+
+    // Calculate how many empty placeholders we need to add to complete the last row
+    const itemsPerRow = 4;
+    const emptyPlaceholdersCount = currentProducts.length > 0 ? 
+        (itemsPerRow - (currentProducts.length % itemsPerRow)) % itemsPerRow : 0;
+    const emptyPlaceholders = Array(emptyPlaceholdersCount).fill(null);
 
     const handlePageChange = (selected: number) => {
         setCurrentPage(selected);
@@ -222,7 +224,7 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
                                     <div className='text-secondary2 capitalize'>{dataType === null ? 'Shop' : dataType}</div>
                                 </div>
                             </div>
-                            <div className="list-tab flex flex-wrap items-center justify-center gap-y-5 gap-8 lg:mt-[70px] mt-12 overflow-hidden">
+                            {/* <div className="list-tab flex flex-wrap items-center justify-center gap-y-5 gap-8 lg:mt-[70px] mt-12 overflow-hidden">
                                 {['t-shirt', 'dress', 'top', 'swimwear', 'shirt'].map((item, index) => (
                                     <div
                                         key={index}
@@ -232,7 +234,7 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
                                         {item}
                                     </div>
                                 ))}
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -241,7 +243,7 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
             <div className="shop-product breadcrumb1 lg:py-20 md:py-14 py-10">
                 <div className="container">
                     <div className="flex max-md:flex-wrap max-md:flex-col-reverse gap-y-8">
-                        <div className="sidebar lg:w-1/4 md:w-1/3 w-full md:pr-12">
+                        {/* <div className="sidebar lg:w-1/4 md:w-1/3 w-full md:pr-12">
                             <div className="filter-type pb-8 border-b border-line">
                                 <div className="heading6">Products Type</div>
                                 <div className="list-type mt-4">
@@ -384,9 +386,9 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
                                     ))}
                                 </div>
                             </div>
-                        </div>
-                        <div className="list-product-block lg:w-3/4 md:w-2/3 w-full md:pl-3">
-                            <div className="filter-heading flex items-center justify-between gap-5 flex-wrap">
+                        </div> */}
+                        <div className="list-product-block w-full">
+                            {/* <div className="filter-heading flex items-center justify-between gap-5 flex-wrap">
                                 <div className="left flex has-line items-center flex-wrap gap-5">
                                     <div className="choose-layout flex items-center gap-2">
                                         <div className="item three-col w-8 h-8 border border-line rounded flex items-center justify-center cursor-pointer active">
@@ -433,14 +435,14 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
                                         <Icon.CaretDown size={12} className='absolute top-1/2 -translate-y-1/2 md:right-4 right-2' />
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="list-filtered flex items-center gap-3 mt-4">
-                                <div className="total-product">
+                                <div className="total-product"> 
                                     {totalProducts}
                                     <span className='text-secondary pl-1'>Products Found</span>
                                 </div>
-                                {
+                                {/* {
                                     (selectedType || selectedSize || selectedColor || selectedBrand) && (
                                         <>
                                             <div className="list flex items-center gap-3">
@@ -479,16 +481,20 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
                                             </div>
                                         </>
                                     )
-                                }
+                                } */}
                             </div>
 
-                            <div className="list-product hide-product-sold grid lg:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-[20px] mt-7">
+                            <div className="list-product hide-product-sold grid lg:grid-cols-4 grid-cols-2 sm:gap-[30px] gap-[20px] mt-7">
                                 {currentProducts.map((item) => (
                                     item.id === 'no-data' ? (
-                                        <div key={item.id} className="no-data-product">No products match the selected criteria.</div>
+                                        <div key={item.id} className="no-data-product col-span-4 text-center py-10">No products match the selected criteria.</div>
                                     ) : (
                                         <Product key={item.id} data={item} type='grid' />
                                     )
+                                ))}
+                                {/* Add empty placeholders to complete the last row */}
+                                {emptyPlaceholders.map((_, index) => (
+                                    <div key={`empty-${index}`} className="product-empty" aria-hidden="true"></div>
                                 ))}
                             </div>
 
@@ -500,7 +506,7 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
                         </div>
                     </div>
                 </div>
-            </div >
+            </div>
         </>
     )
 }
