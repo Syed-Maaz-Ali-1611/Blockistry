@@ -40,7 +40,7 @@ const Footer = () => {
                                 </div>
                                 <div className="newsletter basis-1/2 pl-7 max-md:basis-full max-md:pl-0">
                                     <div className="text-button-uppercase">Follow Us : </div>
-                                    <div className='mt-3'>Welcome to <span className='font-bold'>Blockistry's</span>, where we celebrate the timeless art of block printing in fashion!</div>
+                                    <div className='mt-3'>Welcome to <span className='font-bold'>Blockistry</span>, where we celebrate the timeless art of block printing in fashion!</div>
 
                                     <div className="list-social flex items-center gap-6 mt-4">
                             <Link href={'https://www.facebook.com/blockistry.pk'} target='_blank'>
