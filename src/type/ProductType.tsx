@@ -11,17 +11,17 @@ export interface ProductType {
     type: string,
     name: string,
     gender: string,
-    new: boolean,
-    sale: boolean,
-    rate: number,
-    price: number,
-    originPrice: number,
-    brand: string,
-    sold: number,
-    quantity: number,
-    quantityPurchase: number,
-    sizes: Array<string>,
-    variation: Variation[],
+    new: boolean, // donot need this 
+    sale: boolean, // donot need this 
+    rate: number, // i dont need this too 
+    price: number, // i dont need this 
+    originPrice: number, // donot need this 
+    brand: string, // donot need this 
+    sold: number, // donot need this
+    quantity: number, // donot need this
+    quantityPurchase: number, // donot need this
+    sizes: Array<string>, // donot need this
+    variation: Variation[], // donot need this
     thumbImage: Array<string>,
     images: Array<string>,
     description: string,
