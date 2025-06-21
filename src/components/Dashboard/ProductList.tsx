@@ -188,6 +188,7 @@ const ProductList = () => {
       </table>
 
       <ProductModal 
+      class = "mt-15"
         isOpen={isModalOpen} 
         onClose={closeModal} 
         product={selectedProduct} 
