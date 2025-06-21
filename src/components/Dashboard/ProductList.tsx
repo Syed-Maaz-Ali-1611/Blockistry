@@ -62,8 +62,10 @@ const sampleProducts = [
 ]
 
 const ProductList = () => {
+  const [products, setProducts] = useState(sampleProducts)
   const [selectedProduct, setSelectedProduct] = useState<any>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [deleteConfirm, setDeleteConfirm] = useState<number | null>(null)
 
   const openModal = (product: any) => {
     setSelectedProduct(product)
@@ -73,6 +75,19 @@ const ProductList = () => {
   const closeModal = () => {
     setIsModalOpen(false)
     setSelectedProduct(null)
+  }
+
+  const handleDelete = (id: number) => {
+    setDeleteConfirm(id)
+  }
+
+  const confirmDelete = (id: number) => {
+    setProducts(prev => prev.filter(product => product.id !== id))
+    setDeleteConfirm(null)
+  }
+
+  const cancelDelete = () => {
+    setDeleteConfirm(null)
   }
 
   return (
@@ -98,7 +113,7 @@ const ProductList = () => {
           </tr>
         </thead>
         <tbody className="bg-white divide-y divide-gray-200">
-          {sampleProducts.map((product) => (
+          {products.map((product) => (
             <tr key={product.id}>
               <td className="px-6 py-4 whitespace-nowrap">
                 <div className="flex items-center">
@@ -131,12 +146,41 @@ const ProductList = () => {
                 </div>
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                <button
-                  onClick={() => openModal(product)}
-                  className="text-black hover:text-gray-700"
-                >
-                  <Icon.Eye size={20} />
-                </button>
+                <div className="flex items-center space-x-2">
+                  <button
+                    onClick={() => openModal(product)}
+                    className="text-black hover:text-gray-700"
+                    title="View"
+                  >
+                    <Icon.Eye size={20} />
+                  </button>
+                  {deleteConfirm === product.id ? (
+                    <div className="flex space-x-1">
+                      <button
+                        onClick={() => confirmDelete(product.id)}
+                        className="text-red-600 hover:text-red-800"
+                        title="Confirm Delete"
+                      >
+                        <Icon.Check size={20} />
+                      </button>
+                      <button
+                        onClick={cancelDelete}
+                        className="text-gray-600 hover:text-gray-800"
+                        title="Cancel"
+                      >
+                        <Icon.X size={20} />
+                      </button>
+                    </div>
+                  ) : (
+                    <button
+                      onClick={() => handleDelete(product.id)}
+                      className="text-red-600 hover:text-red-800"
+                      title="Delete"
+                    >
+                      <Icon.Trash size={20} />
+                    </button>
+                  )}
+                </div>
               </td>
             </tr>
           ))}
