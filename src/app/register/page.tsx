@@ -1,4 +1,3 @@
-// app/register/page.tsx
 'use client'
 import React, { useState } from 'react'
 import Link from 'next/link'
@@ -51,7 +50,6 @@ const Register = () => {
                 throw new Error(data.message || 'Registration failed')
             }
 
-            // Redirect to dashboard on successful registration
             router.push('/dashboard')
         } catch (err: any) {
             setError(err.message || 'Registration failed. Please try again.')
@@ -137,15 +135,21 @@ const Register = () => {
                                         <Link href={'#!'} className='text-black hover:underline pl-1'>Terms of User</Link>
                                     </label>
                                 </div>
-                                <div className="block-button md:mt-7 mt-4">
-                                    <button 
-                                        type="submit" 
-                                        className="button-main"
-                                        disabled={loading}
-                                    >
-                                        {loading ? 'Registering...' : 'Register'}
-                                    </button>
-                                </div>
+                                <button
+                                    type="submit"
+                                    className="w-full mt-6 bg-black text-white py-3 px-4 rounded-lg hover:bg-gray-800 transition-colors duration-300 flex items-center justify-center"
+                                    disabled={loading}
+                                >
+                                    {loading ? (
+                                        <>
+                                            <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                            </svg>
+                                            Registering...
+                                        </>
+                                    ) : 'Register'}
+                                </button>
                             </form>
                         </div>
                         <div className="right md:w-1/2 w-full lg:pl-[60px] md:pl-[40px] flex items-center">
