@@ -5,13 +5,13 @@ import TopNavOne from '@/components/Header/TopNav/TopNavOne'
 import MenuOne from '@/components/Header/Menu/MenuOne'
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb'
 import Footer from '@/components/Footer/Footer'
-import * as Icon from "@phosphor-icons/react/dist/ssr";
+import * as Icon from "@phosphor-icons/react/dist/ssr"
+import ProductTabs from '@/components/Dashboard/ProductTabs'
 
 const Dashboard = () => {
     const router = useRouter()
 
     useEffect(() => {
-        // Check if user is authenticated
         const checkAuth = async () => {
             try {
                 const response = await fetch('/api/auth/verify', {
@@ -63,8 +63,11 @@ const Dashboard = () => {
                         </button>
                     </div>
                     <div className="mt-4">
-                        <p>Here you can manage your account, orders, and preferences.</p>
+                        <p>Here you can manage your products, orders, and preferences.</p>
                     </div>
+                    
+                    {/* Add the ProductTabs component */}
+                    <ProductTabs />
                 </div>
             </div>
             <Footer />

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.4",
     "@phosphor-icons/react": "^2.0.14",
     "bcryptjs": "^3.0.2",
     "framer-motion": "^10.17.4",

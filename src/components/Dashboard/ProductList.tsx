@@ -1,0 +1,155 @@
+'use client'
+import React, { useState } from 'react'
+import * as Icon from "@phosphor-icons/react/dist/ssr"
+import ProductModal from './ProductModal'
+
+// Sample product data
+const sampleProducts = [
+  {
+    id: 1,
+    name: 'Classic White T-Shirt',
+    description: '100% cotton, premium quality white t-shirt for everyday wear.',
+    price: 24.99,
+    category: 'clothing',
+    size: 'M',
+    color: 'White',
+    rating: 4.5,
+    images: [
+      'https://example.com/tshirt1.jpg',
+      'https://example.com/tshirt2.jpg'
+    ]
+  },
+  {
+    id: 2,
+    name: 'Slim Fit Jeans',
+    description: 'Slim fit jeans with stretch for maximum comfort.',
+    price: 59.99,
+    category: 'clothing',
+    size: '32',
+    color: 'Blue',
+    rating: 4.2,
+    images: [
+      'https://example.com/jeans1.jpg',
+      'https://example.com/jeans2.jpg'
+    ]
+  },
+  {
+    id: 3,
+    name: 'Leather Wallet',
+    description: 'Genuine leather wallet with multiple card slots.',
+    price: 39.99,
+    category: 'accessories',
+    color: 'Brown',
+    rating: 4.7,
+    images: [
+      'https://example.com/wallet1.jpg'
+    ]
+  },
+  {
+    id: 4,
+    name: 'Running Shoes',
+    description: 'Lightweight running shoes with cushioned soles.',
+    price: 89.99,
+    category: 'shoes',
+    size: '10',
+    color: 'Black/Red',
+    rating: 4.8,
+    images: [
+      'https://example.com/shoes1.jpg',
+      'https://example.com/shoes2.jpg'
+    ]
+  }
+]
+
+const ProductList = () => {
+  const [selectedProduct, setSelectedProduct] = useState<any>(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const openModal = (product: any) => {
+    setSelectedProduct(product)
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+    setSelectedProduct(null)
+  }
+
+  return (
+    <div className="overflow-x-auto">
+      <table className="min-w-full divide-y divide-gray-200">
+        <thead className="bg-gray-50">
+          <tr>
+            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Product
+            </th>
+            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Category
+            </th>
+            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Price
+            </th>
+            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Rating
+            </th>
+            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Actions
+            </th>
+          </tr>
+        </thead>
+        <tbody className="bg-white divide-y divide-gray-200">
+          {sampleProducts.map((product) => (
+            <tr key={product.id}>
+              <td className="px-6 py-4 whitespace-nowrap">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0 h-10 w-10">
+                    <img className="h-10 w-10 rounded-full object-cover" src={product.images[0]} alt={product.name} />
+                  </div>
+                  <div className="ml-4">
+                    <div className="text-sm font-medium text-gray-900">{product.name}</div>
+                    <div className="text-sm text-gray-500">{product.color} {product.size && `| ${product.size}`}</div>
+                  </div>
+                </div>
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 capitalize">
+                {product.category}
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                ${product.price.toFixed(2)}
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap">
+                <div className="flex items-center">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon.Star
+                      key={i}
+                      size={16}
+                      weight={i < Math.floor(product.rating) ? 'fill' : 'regular'}
+                      className={i < product.rating ? 'text-yellow-400' : 'text-gray-300'}
+                    />
+                  ))}
+                  <span className="ml-1 text-sm text-gray-500">({product.rating})</span>
+                </div>
+              </td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                <button
+                  onClick={() => openModal(product)}
+                  className="text-black hover:text-gray-700"
+                >
+                  <Icon.Eye size={20} />
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <ProductModal 
+        isOpen={isModalOpen} 
+        onClose={closeModal} 
+        product={selectedProduct} 
+      />
+    </div>
+  )
+}
+
+export default ProductList
