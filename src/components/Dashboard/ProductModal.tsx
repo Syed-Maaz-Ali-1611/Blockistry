@@ -7,7 +7,7 @@ const ProductModal = ({ isOpen, onClose, product }: any) => {
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto">
-      <div className="flex items-start justify-center min-h-screen pt-16 px-4 pb-20 text-center sm:block sm:p-0">
+      <div className="flex items-start justify-center min-h-screen pt-[5%] px-4 pb-20 text-center sm:block sm:p-0">
         {/* Overlay */}
         <div className="fixed inset-0 transition-opacity" aria-hidden="true">
           <div className="absolute inset-0 bg-gray-500 opacity-75" onClick={onClose}></div>
