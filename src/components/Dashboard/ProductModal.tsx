@@ -7,45 +7,30 @@ const ProductModal = ({ isOpen, onClose, product }: any) => {
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto">
-      <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <div className="flex items-start justify-center min-h-screen pt-16 px-4 pb-20 text-center sm:block sm:p-0">
         {/* Overlay */}
         <div className="fixed inset-0 transition-opacity" aria-hidden="true">
-          <div 
-            className="absolute inset-0 bg-gray-500 opacity-75" 
-            onClick={onClose}
-          ></div>
+          <div className="absolute inset-0 bg-gray-500 opacity-75" onClick={onClose}></div>
         </div>
 
         {/* Modal container */}
-        <div className="inline-block align-bottom bg-white rounded-t-lg rounded-b-none sm:rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-          {/* Close button at the top for mobile */}
-          <div className="sm:hidden sticky top-0 bg-white z-10 p-2 flex justify-end border-b">
-            <button
-              onClick={onClose}
-              className="text-gray-500 hover:text-gray-700 p-1"
-            >
-              <Icon.X size={24} />
-            </button>
-          </div>
-          
+        <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full max-h-[90vh] overflow-y-auto">
           {/* Modal content */}
-          <div className="bg-white px-4 pt-2 pb-4 sm:p-6">
+          <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
             <div className="sm:flex sm:items-start">
-              <div className="mt-2 text-center sm:mt-0 sm:text-left w-full">
-                {/* Header with close button (desktop) */}
-                <div className="hidden sm:flex justify-between items-start">
-                  <h3 className="text-lg leading-6 font-medium text-gray-900">
-                    {product.name}
-                  </h3>
+              <div className="mt-3 text-center sm:mt-0 sm:text-left w-full">
+                {/* Modal header */}
+                <div className="flex justify-between items-center sticky top-0 bg-white py-2 z-10">
+                  <h3 className="text-lg leading-6 font-medium text-gray-900">{product.name}</h3>
                   <button
                     onClick={onClose}
-                    className="text-gray-400 hover:text-gray-500 ml-4"
+                    className="text-gray-400 hover:text-gray-500 focus:outline-none"
                   >
                     <Icon.X size={24} />
                   </button>
                 </div>
 
-                {/* Content grid */}
+                {/* Modal body */}
                 <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
                   {/* Images section */}
                   <div className="space-y-4">
@@ -122,8 +107,8 @@ const ProductModal = ({ isOpen, onClose, product }: any) => {
             </div>
           </div>
 
-          {/* Footer with close button (mobile) */}
-          <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse border-t sm:border-t-0">
+          {/* Modal footer */}
+          <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse sticky bottom-0">
             <button
               type="button"
               className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-black text-base font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black sm:ml-3 sm:w-auto sm:text-sm"
