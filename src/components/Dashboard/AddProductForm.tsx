@@ -2,8 +2,19 @@
 import React, { useState } from 'react'
 import * as Icon from "@phosphor-icons/react/dist/ssr"
 
+// Define the type for your product state
+type Product = {
+  name: string
+  description: string
+  price: string
+  category: string
+  size: string
+  color: string
+  images: File[] // Changed from never[] to File[]
+}
+
 const AddProductForm = () => {
-  const [product, setProduct] = useState({
+  const [product, setProduct] = useState<Product>({
     name: '',
     description: '',
     price: '',
@@ -19,9 +30,12 @@ const AddProductForm = () => {
   }
 
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) {
+    if (e.target.files && e.target.files.length > 0) {
       const files = Array.from(e.target.files)
-      setProduct(prev => ({ ...prev, images: [...prev.images, ...files] }))
+      setProduct(prev => ({
+        ...prev,
+        images: [...prev.images, ...files]
+      }))
     }
   }
 
@@ -139,6 +153,7 @@ const AddProductForm = () => {
                     className="sr-only"
                     multiple
                     onChange={handleImageUpload}
+                    accept="image/*"
                   />
                 </label>
                 <p className="pl-1">or drag and drop</p>
@@ -155,6 +170,18 @@ const AddProductForm = () => {
                     alt={`Preview ${index}`}
                     className="h-full w-full object-cover"
                   />
+                  <button
+                    type="button"
+                    className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center"
+                    onClick={() => {
+                      setProduct(prev => ({
+                        ...prev,
+                        images: prev.images.filter((_, i) => i !== index)
+                      }))
+                    }}
+                  >
+                    <Icon.X size={12} />
+                  </button>
                 </div>
               ))}
             </div>
