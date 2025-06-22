@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import * as Icon from "@phosphor-icons/react/dist/ssr"
 import ProductModal from './ProductModal'
+import EditProductModal from './EditProductModal'
 
 // Sample product data
 const sampleProducts = [
@@ -15,8 +16,8 @@ const sampleProducts = [
     color: 'White',
     rating: 4.5,
     images: [
-      'https://example.com/tshirt1.jpg',
-      'https://example.com/tshirt2.jpg'
+      'https://i.pinimg.com/736x/be/ce/c1/becec11aee909a53a8c29b8ece4cd84c.jpg',
+      'https://i.pinimg.com/736x/be/ce/c1/becec11aee909a53a8c29b8ece4cd84c.jpg'
     ]
   },
   {
@@ -29,8 +30,8 @@ const sampleProducts = [
     color: 'Blue',
     rating: 4.2,
     images: [
-      'https://example.com/jeans1.jpg',
-      'https://example.com/jeans2.jpg'
+      'https://i.pinimg.com/736x/be/ce/c1/becec11aee909a53a8c29b8ece4cd84c.jpg',
+      'https://i.pinimg.com/736x/be/ce/c1/becec11aee909a53a8c29b8ece4cd84c.jpg'
     ]
   },
   {
@@ -42,7 +43,8 @@ const sampleProducts = [
     color: 'Brown',
     rating: 4.7,
     images: [
-      'https://example.com/wallet1.jpg'
+      'https://i.pinimg.com/736x/be/ce/c1/becec11aee909a53a8c29b8ece4cd84c.jpg',
+      'https://i.pinimg.com/736x/be/ce/c1/becec11aee909a53a8c29b8ece4cd84c.jpg'
     ]
   },
   {
@@ -55,8 +57,8 @@ const sampleProducts = [
     color: 'Black/Red',
     rating: 4.8,
     images: [
-      'https://example.com/shoes1.jpg',
-      'https://example.com/shoes2.jpg'
+     'https://i.pinimg.com/736x/be/ce/c1/becec11aee909a53a8c29b8ece4cd84c.jpg',
+      'https://i.pinimg.com/736x/be/ce/c1/becec11aee909a53a8c29b8ece4cd84c.jpg'
     ]
   }
 ]
@@ -64,7 +66,9 @@ const sampleProducts = [
 const ProductList = () => {
   const [products, setProducts] = useState(sampleProducts)
   const [selectedProduct, setSelectedProduct] = useState<any>(null)
+  const [editingProduct, setEditingProduct] = useState<any>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false)
   const [deleteConfirm, setDeleteConfirm] = useState<number | null>(null)
 
   const openModal = (product: any) => {
@@ -75,6 +79,16 @@ const ProductList = () => {
   const closeModal = () => {
     setIsModalOpen(false)
     setSelectedProduct(null)
+  }
+
+  const openEditModal = (product: any) => {
+    setEditingProduct(product)
+    setIsEditModalOpen(true)
+  }
+
+  const closeEditModal = () => {
+    setIsEditModalOpen(false)
+    setEditingProduct(null)
   }
 
   const handleDelete = (id: number) => {
@@ -88,6 +102,15 @@ const ProductList = () => {
 
   const cancelDelete = () => {
     setDeleteConfirm(null)
+  }
+
+  const handleUpdateProduct = (updatedProduct: any) => {
+    setProducts(prev => 
+      prev.map(product => 
+        product.id === updatedProduct.id ? updatedProduct : product
+      )
+    )
+    closeEditModal()
   }
 
   return (
@@ -154,6 +177,13 @@ const ProductList = () => {
                   >
                     <Icon.Eye size={20} />
                   </button>
+                  <button
+                    onClick={() => openEditModal(product)}
+                    className="text-blue-600 hover:text-blue-800"
+                    title="Edit"
+                  >
+                    <Icon.Pencil size={20} />
+                  </button>
                   {deleteConfirm === product.id ? (
                     <div className="flex space-x-1">
                       <button
@@ -191,6 +221,13 @@ const ProductList = () => {
         isOpen={isModalOpen} 
         onClose={closeModal} 
         product={selectedProduct} 
+      />
+      
+      <EditProductModal
+        isOpen={isEditModalOpen}
+        onClose={closeEditModal}
+        product={editingProduct}
+        onSave={handleUpdateProduct}
       />
     </div>
   )
