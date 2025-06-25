@@ -10,6 +10,7 @@ import ProductTabs from '@/components/Dashboard/ProductTabs'
 
 const Dashboard = () => {
     const router = useRouter()
+    
 
     useEffect(() => {
         const checkAuth = async () => {
