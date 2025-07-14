@@ -261,7 +261,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                    
                                 </div>
                             </div>
-                            <div className="get-it mt-6 pb-8 border-b border-line">
+                            {/* <div className="get-it mt-6 pb-8 border-b border-line">
                                 <div className="heading5">Get it today</div>
                                 <div className="item flex items-center gap-3 mt-4">
                                     <div className="icon-delivery-truck text-4xl"></div>
@@ -284,7 +284,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                         <div className="caption1 text-secondary mt-1">Not impressed? Get a refund. You have 100 days to break our hearts.</div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="list-product hide-product-sold  menu-main mt-6">
                                 <div className="heading5 pb-4">You{String.raw`'ll`} love this too</div>
                                 <Swiper
@@ -331,12 +331,12 @@ const Default: React.FC<Props> = ({ data, productId }) => {
   </div>
   <div className="desc-block mt-8">
     <div className="desc-item description open">
-      <div className='grid md:grid-cols-2 gap-8 gap-y-5'>
-        <div className="left">
+      <div className='justify-center items-center'>
+        <div className="center justify-center">
           <div className="heading6">Description</div>
           <div className="text-secondary mt-2">Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. These cabinets not only make a great storage units, but also bring a great decorative accent to your decor. Traditionally designed, they are perfect to be used in the hallway, living room, bedroom, office or any place where you need to store or display things. Made of high quality materials, they are sturdy and durable for years. Bring one-of-a-kind look to your interior with furniture from Onita Furniture!</div>
         </div>
-        <div className="right">
+        {/* <div className="right">
           <div className="heading6">About This Products</div>
           <div className="list-feature">
             <div className="item flex gap-1 text-secondary mt-1">
@@ -360,9 +360,9 @@ const Default: React.FC<Props> = ({ data, productId }) => {
               <p>Mauris in nisl scelerisque massa consectetur pretium sed et mauris.</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="grid lg:grid-cols-4 grid-cols-2 gap-[30px] md:mt-10 mt-6">
+      {/* <div className="grid lg:grid-cols-4 grid-cols-2 gap-[30px] md:mt-10 mt-6">
         <div className="item">
           <div className="icon-delivery-truck text-4xl"></div>
           <div className="heading6 mt-4">Shipping Faster</div>
@@ -383,7 +383,7 @@ const Default: React.FC<Props> = ({ data, productId }) => {
           <div className="heading6 mt-4">highly compatible</div>
           <div className="text-secondary mt-2">Use on walls, furniture, doors and many more surfaces. The possibilities are endless.</div>
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
 </div>
