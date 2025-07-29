@@ -27,20 +27,6 @@ const WhatNewOne: React.FC<Props> = ({ data, start, limit }) => {
                     <div className="heading flex flex-col items-center text-center">
                         <div className="heading3">What{String.raw`'s`} new</div>
                         <div className="menu-tab flex items-center gap-2 p-1 bg-surface rounded-2xl mt-6">
-                            {/* {['top', 't-shirt', 'dress', 'sets', 'shirt'].map((type) => (
-                                <div
-                                    key={type}
-                                    className={`tab-item relative text-secondary text-button-uppercase py-2 px-5 cursor-pointer duration-500 hover:text-black ${activeTab === type ? 'active' : ''}`}
-                                    onClick={() => handleTabClick(type)}
-                                >
-                                    {activeTab === type && (
-                                        <motion.div layoutId='active-pill' className='absolute inset-0 rounded-2xl bg-white'></motion.div>
-                                    )}
-                                    <span className='relative text-button-uppercase z-[1]'>
-                                        {type}
-                                    </span>
-                                </div>
-                            ))} */}
                         </div>
                     </div>
 

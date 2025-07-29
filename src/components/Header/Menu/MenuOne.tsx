@@ -104,7 +104,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
 
                   <li className="h-full">
                     <Link
-                      href="/shop/breadcrumb1"
+                      href="/shop"
                       className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${
                         pathname.includes("/shop/") ? "active" : ""
                       }`}
