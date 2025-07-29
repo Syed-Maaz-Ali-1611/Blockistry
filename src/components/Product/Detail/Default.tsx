@@ -18,6 +18,8 @@ import { useModalWishlistContext } from '@/context/ModalWishlistContext'
 import { useCompare } from '@/context/CompareContext'
 import { useModalCompareContext } from '@/context/ModalCompareContext'
 import ModalSizeguide from '@/components/Modal/ModalSizeguide'
+import { FaWhatsapp } from "react-icons/fa";
+
 
 SwiperCore.use([Navigation, Thumbs]);
 
@@ -251,7 +253,8 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                 </div>
                              
                                 <div className="button-block mt-5">
-                                    <div className="button-main w-full text-center">Buy It Now</div>
+                                    <div className="button-main flex flex-row w-full justify-center gap-4 text-center">
+                                        <FaWhatsapp style={{ color: 'white', fontSize: '22px' }}/>Whatsapp</div>
                                 </div>
                                 <div className="flex items-center lg:gap-20 gap-8 mt-5 pb-6 border-b border-line">
                                    

@@ -42,15 +42,15 @@ const Product: React.FC<ProductProps> = ({ data, type }) => {
         setActiveSize(item)
     }
 
-    const handleAddToCart = () => {
-        if (!cartState.cartArray.find(item => item.id === data.id)) {
-            addToCart({ ...data });
-            updateCart(data.id, data.quantityPurchase, activeSize, activeColor)
-        } else {
-            updateCart(data.id, data.quantityPurchase, activeSize, activeColor)
-        }
-        openModalCart()
-    };
+    // const handleAddToCart = () => {
+    //     if (!cartState.cartArray.find(item => item.id === data.id)) {
+    //         addToCart({ ...data });
+    //         updateCart(data.id, data.quantityPurchase, activeSize, activeColor)
+    //     } else {
+    //         updateCart(data.id, data.quantityPurchase, activeSize, activeColor)
+    //     }
+    //     openModalCart()
+    // };
 
     const handleAddToWishlist = () => {
         // if product existed in wishlit, remove from wishlist and set state to false
@@ -153,15 +153,15 @@ const Product: React.FC<ProductProps> = ({ data, type }) => {
                                 >
                                     <Icon.Eye className='text-lg' />
                                 </div>
-                                <div
-                                    className="add-cart-btn w-9 h-9 flex items-center justify-center rounded-lg duration-300 bg-white hover:bg-black hover:text-white"
+                                {/* <div
+                                    className=" w-9 h-9 flex items-center justify-center rounded-lg duration-300 bg-white hover:bg-black hover:text-white"
                                     onClick={e => {
                                         e.stopPropagation();
                                         handleAddToCart()
                                     }}
                                 >
                                     <Icon.ShoppingBagOpen className='text-lg' />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="product-infor mt-4 lg:mb-7">
