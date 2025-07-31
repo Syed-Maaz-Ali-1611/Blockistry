@@ -202,6 +202,8 @@ const EditProductModal: React.FC<EditProductModalProps> = ({ isOpen, onClose, pr
                           {editedProduct.images.map((image, index) => (
                             <div key={`existing-${index}`} className="relative group">
                               <div className="h-20 w-20 rounded-md border overflow-hidden">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+
                                 <img
                                   src={image}
                                   alt={`Product ${index}`}
@@ -255,6 +257,8 @@ const EditProductModal: React.FC<EditProductModalProps> = ({ isOpen, onClose, pr
                           {newImages.map((image, index) => (
                             <div key={`new-${index}`} className="relative group">
                               <div className="h-20 w-20 rounded-md border overflow-hidden">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+
                                 <img
                                   src={URL.createObjectURL(image)}
                                   alt={`New image ${index}`}

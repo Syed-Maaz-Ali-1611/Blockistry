@@ -35,6 +35,8 @@ const ProductModal = ({ isOpen, onClose, product }: any) => {
                   {/* Images section */}
                   <div className="space-y-4">
                     <div className="bg-gray-100 rounded-lg overflow-hidden">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+
                       <img 
                         src={product.images[0]} 
                         alt={product.name}
@@ -43,6 +45,7 @@ const ProductModal = ({ isOpen, onClose, product }: any) => {
                     </div>
                     <div className="flex gap-2 overflow-x-auto pb-2">
                       {product.images.map((img: string, index: number) => (
+                        /* eslint-disable-next-line @next/next/no-img-element */
                         <img
                           key={index}
                           src={img}

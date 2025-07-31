@@ -165,6 +165,8 @@ const AddProductForm = () => {
             <div className="mt-2 flex flex-wrap gap-2">
               {product.images.map((image, index) => (
                 <div key={index} className="relative h-20 w-20 rounded-md border">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+
                   <img
                     src={URL.createObjectURL(image)}
                     alt={`Preview ${index}`}
