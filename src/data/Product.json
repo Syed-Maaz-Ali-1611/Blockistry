@@ -2009,31 +2009,31 @@
         "color": "yellow",
         "colorCode": "#ECB018",
         "colorImage": "/images/product/color/underwear-white.png",
-        "image": "/images/product/fashion/79-1.jpg"
+        "image": "/images/product/fashion/83-1.jpg"
       },
       {
         "color": "red",
         "colorCode": "#DB4444",
         "colorImage": "/images/product/color/underwear-red.png",
-        "image": "/images/product/fashion/79-2.jpg"
+        "image": "/images/product/fashion/83-2.jpg"
       },
       {
         "color": "black",
         "colorCode": "#555",
         "colorImage": "/images/product/color/underwear-black.png",
-        "image": "/images/product/fashion/79-3.jpg"
+        "image": "/images/product/fashion/83-3.jpg"
       }
     ],
     "thumbImage": [
-      "/images/product/fashion/79-1.jpg",
-      "/images/product/fashion/79-2.jpg"
+      "/images/product/fashion/83-1.jpg",
+      "/images/product/fashion/83-2.jpg"
     ],
     "images": [
-      "/images/product/fashion/79-1.jpg",
-      "/images/product/fashion/79-2.jpg",
-      "/images/product/fashion/79-3.jpg"
+      "/images/product/fashion/83-1.jpg",
+      "/images/product/fashion/83-2.jpg",
+      "/images/product/fashion/83-3.jpg"
     ],
-    "description": "Drape yourself in heritage reimagined with this dark indigo cotton silk suit, adorned in a unique chunri print that blends tradition with contemporary allure. The gold and silver two-tone printing casts a luminous glow against the deep base, creating a mesmerizing interplay of light and depth. The ensemble finds perfect balance with a light motif-printed shirt, allowing the heavily adorned chiffon dupatta to take center stage. Finished with exquisite detailing, this bold yet breathtaking dupatta is the true heart of the outfit—a statement of timeless style and undeniable elegance, crafted for those who embrace fashion with fearless grace.",
+    "description": "Radiate confidence in this striking bronze and maroon cotton silk suit, a bold expression of contemporary elegance. The panel-style shirt, featuring a subtle center panel and diagonal-striped side panels, offers a sleek, modern silhouette that exudes effortless charm. The true masterpiece of this ensemble is the bold and captivating chiffon dupatta—a bronze base framed by a dramatic four-sided maroon contrast. Its intricate border and motif pattern enclose a diagonal-striped center, creating a mesmerizing interplay of design and depth. Paired with matching cotton silk trousers, this ensemble is a statement of power, poise, and undeniable sophistication, perfect for those who embrace fearless style.",
     "action": "quick shop",
     "slug": "t-shirt"
   },
@@ -2058,31 +2058,706 @@
         "color": "yellow",
         "colorCode": "#ECB018",
         "colorImage": "/images/product/color/underwear-white.png",
-        "image": "/images/product/fashion/79-1.jpg"
+        "image": "/images/product/fashion/84-1.jpg"
       },
       {
         "color": "red",
         "colorCode": "#DB4444",
         "colorImage": "/images/product/color/underwear-red.png",
-        "image": "/images/product/fashion/79-2.jpg"
+        "image": "/images/product/fashion/84-2.jpg"
       },
       {
         "color": "black",
         "colorCode": "#555",
         "colorImage": "/images/product/color/underwear-black.png",
-        "image": "/images/product/fashion/79-3.jpg"
+        "image": "/images/product/fashion/84-3.jpg"
       }
     ],
     "thumbImage": [
-      "/images/product/fashion/79-1.jpg",
-      "/images/product/fashion/79-2.jpg"
+      "/images/product/fashion/84-1.jpg",
+      "/images/product/fashion/84-2.jpg"
     ],
     "images": [
-      "/images/product/fashion/79-1.jpg",
-      "/images/product/fashion/79-2.jpg",
-      "/images/product/fashion/79-3.jpg"
+      "/images/product/fashion/84-1.jpg",
+      "/images/product/fashion/84-2.jpg",
+      "/images/product/fashion/84-3.jpg"
     ],
-    "description": "Drape yourself in heritage reimagined with this dark indigo cotton silk suit, adorned in a unique chunri print that blends tradition with contemporary allure. The gold and silver two-tone printing casts a luminous glow against the deep base, creating a mesmerizing interplay of light and depth. The ensemble finds perfect balance with a light motif-printed shirt, allowing the heavily adorned chiffon dupatta to take center stage. Finished with exquisite detailing, this bold yet breathtaking dupatta is the true heart of the outfit—a statement of timeless style and undeniable elegance, crafted for those who embrace fashion with fearless grace.",
+    "description": "Drenched in the enigmatic allure of rhino gray chiffon, this monotone ensemble is a vision of tradition redefined. The booti-style shirt, adorned with gold, maroon, and rust block printing, unfolds like a tapestry of heritage, while hand-sewn sequins glisten across the fabric, capturing the essence of timeless sophistication. The chiffon dupatta, framed with bold diagonal-striped borders, cascades gracefully, its elegance heightened by delicate lace finishing and playful hanging balls at the anchal. Paired with rich raw silk trousers, this ensemble is a statement of refined beauty—crafted for those who seek poise, grace, and effortless grandeur.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  
+  {
+    "id": "45",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/85-1.jpg"
+      },
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/85-2.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/85-1.jpg",
+      "/images/product/fashion/85-2.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/85-1.jpg",
+      "/images/product/fashion/85-2.jpg"
+    ],
+    "description": "Step into a world of midnight mystique with this deep midnight blue cotton silk suit, where artistry and elegance intertwine. The shirt front blooms with mesmerizing phool motifs, each intricately placed to create a vision of timeless grace. The sleeves steal the spotlight, layered with ornate multi-border detailing, making every movement a statement of grandeur. Echoing this regal charm, the chiffon dupatta is a masterpiece in itself. The anchal is framed with elaborate borders, while delicate booti motifs dance across its sheer expanse, creating an enchanting interplay of design and depth. Finished with a fine lace trim, the dupatta adds a whisper of refinement, completing this majestic ensemble. Paired with cotton silk trousers, this look is an ode to sophistication—perfect for those who command attention with effortless poise.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "46",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/86-1.jpg"
+      },
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/86-2.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/86-1.jpg",
+      "/images/product/fashion/86-2.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/86-1.jpg",
+      "/images/product/fashion/86-2.jpg"
+    ],
+    "description": "Wrap yourself in the regal charm of this pomegranate red cotton silk suit, where tradition meets timeless sophistication. The gold and black block-printed boti-style shirt showcases intricate artistry, perfectly balanced by the luxurious feel of cotton silk trousers for a seamless, elegant look.  The chiffon dupatta, adorned with diagonal stripes, adds a striking contrast, further elevated by its delicate lace finishing. Light, graceful, and effortlessly chic, this ensemble is a perfect blend of heritage and modern refinement, designed for those who appreciate exquisite craftsmanship and bold elegance.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "47",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/87-1.jpg"
+      },
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/87-2.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/87-1.jpg",
+      "/images/product/fashion/87-2.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/87-1.jpg",
+      "/images/product/fashion/87-2.jpg"
+    ],
+    "description": "Step into timeless elegance with this firozi block-printed cotton net suit, adorned with monotone gold prints on the shirt and dupatta. Hand-sewn sequins add a subtle shimmer, enhancing its traditional charm. The raw silk trousers provide a refined contrast, completing the ensemble with effortless grace.  The ready-to-wear dupatta is beautifully finished with lace trim and hanging balls at the anchal, while a matching lace border is included for the shirt. A perfect blend of tradition and sophistication, this suit is designed for those who appreciate fine craftsmanship and classic beauty.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "48",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/88-1.jpg"
+      },
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/88-2.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/88-1.jpg",
+      "/images/product/fashion/88-2.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/88-1.jpg",
+      "/images/product/fashion/88-2.jpg"
+    ],
+    "description": "Crafted in luxurious cotton silk, this Kelly green suit stands out with its elegant panel-style print that adds depth to the design. The ensemble is paired with a contrasting dupatta in the same base shade, accented by deep violet borders on all four sides for a bold touch. The dupatta’s ready-to-wear appeal is enhanced by intricate lace finishing and zari ball detailing along the anchal. Hand-sewn sequins throughout the dress bring a touch of sparkle, making it a truly sophisticated and refined choice.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "49",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/89-1.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/89-1.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/89-1.jpg"
+    ],
+    "description": "This ash grey soft cotton silk suit is exquisitely designed with intricate kairi bunches, lending a refined and artistic touch. The matching chiffon dupatta features the same kairi pattern, elegantly printed throughout, but distinguished by a heavier anchal for added flair. The entire design is brought to life with a captivating color palette of azure blue and cobalt blue, beautifully highlighted with a subtle gold finish, adding a touch of luxury and sophistication to the ensemble.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "50",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/90-1.jpg"
+      },
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/90-2.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/90-1.jpg",
+      "/images/product/fashion/90-2.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/90-1.jpg",
+      "/images/product/fashion/90-2.jpg"
+    ],
+    "description": "Embracing a lively lime green hue, this chiffon suit showcases a creative mix of magenta and bottle green details, highlighted with gold. The ready-to-wear dupatta features striking diagonal stripes, adding a distinctive touch to the outfit. Artistic motifs scattered across the shirt bring an element of style, while the raw silk trouser completes the ensemble for a refined and fashionable look.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "51",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/91-1.jpg"
+      },
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/91-2.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/91-1.jpg",
+      "/images/product/fashion/91-2.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/91-1.jpg",
+      "/images/product/fashion/91-2.jpg"
+    ],
+    "description": "This orchid-colored raw silk ensemble radiates elegance with its simple yet refined printed shirt, perfectly paired with an anchal-style dupatta. Light gold hand-sewn sequins subtly enhance the outfit, adding a touch of shimmer to uplift the look. This dress embodies peak elegance while making a distinctive style statement.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "52",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/92-1.jpg"
+      },
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/92-2.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/92-1.jpg",
+      "/images/product/fashion/92-2.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/92-1.jpg",
+      "/images/product/fashion/92-2.jpg"
+    ],
+    "description": "Introducing the Rust Charmer – a captivating cotton silk suit that exudes understated luxury. The highlight of this ensemble is the cotton net half-and-half dupatta, beautifully contrast-dyed to enhance the rich rust tones of the dress. This subtle yet elegant outfit is perfect for those who appreciate refined charm with a touch of uniqueness.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "53",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/93-1.jpg"
+      },
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/93-2.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/93-1.jpg",
+      "/images/product/fashion/93-2.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/93-1.jpg",
+      "/images/product/fashion/93-2.jpg"
+    ],
+    "description": "This beige raw silk suit embodies simplicity and elegance, offering a perfect blend of understated style and grace. The rust and forest green printing, accentuated with a gold finish, adds a touch of sophistication to the pastel canvas. Paired with a ready-to-wear chiffon dupatta, this ensemble is a timeless choice for those who appreciate a subtle yet refined look.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "54",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/94-1.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/94-1.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/94-1.jpg"
+    ],
+    "description": "A stunning chiffon suit in deep sea-green, this ensemble exudes elegance with its delicate booti pattern on the shirt, adding subtle texture and charm. The heavy printed dupatta complements the look, featuring intricate designs that elevate the outfit's appeal. Paired with a raw silk trouser, the combination of rich fabrics and patterns makes it perfect for both formal and semi-formal occasions.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "55",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/95-1.jpg"
+      },
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/95-2.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/95-1.jpg",
+      "/images/product/fashion/95-2.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/95-1.jpg",
+      "/images/product/fashion/95-2.jpg"
+    ],
+    "description": "Introducing a regal ensemble in royal blue, featuring a richly printed shirt paired with a balanced dupatta in gold and lime green. This luxurious piece is truly one of a kind, perfect for achieving an elegant and majestic look.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "56",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/96-1.jpg"
+      },
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/96-2.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/96-1.jpg",
+      "/images/product/fashion/96-2.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/96-1.jpg",
+      "/images/product/fashion/96-2.jpg"
+    ],
+    "description": "Radiate confidence and charm in this luminous sunshine yellow ensemble—a true celebration of joy and vibrancy. The dress, rendered in a radiant yellow hue, is a canvas of effortless elegance, designed to uplift and inspire. It finds the perfect companion in a stunning chiffon dupatta, drenched in deep magenta and forest green tones, intricately adorned with an all-over motif spray that adds depth, texture, and a hint of traditional allure. This bold fusion of vivid color and refined detailing strikes the perfect balance between statement and sophistication. Whether you're attending a festive gathering or stepping into a special moment, this ensemble is crafted to turn heads and leave a lasting impression. Made for the spotlight, designed for the woman who commands it.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "57",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/97-1.jpg"
+      },
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/97-2.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/97-1.jpg",
+      "/images/product/fashion/97-2.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/97-1.jpg",
+      "/images/product/fashion/97-2.jpg"
+    ],
+    "description": "Unveiling the artistry on a bold magenta and indigo tie-dye canvas. Accented with rich gold and green patterns, this piece embodies a blend of simplicity and creative elegance.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "58",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/98-1.jpg"
+      },
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/98-2.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/98-1.jpg",
+      "/images/product/fashion/98-2.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/98-1.jpg",
+      "/images/product/fashion/98-2.jpg"
+    ],
+    "description": "Experience the art of tradition with this exquisite block-printed suit in shades of rich mauve and deep indigo. A beautiful fusion of color and craftsmanship, capturing elegance in every detail.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "59",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/99-1.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/99-1.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/99-1.jpg"
+    ],
+    "description": "Discover the essence of tradition with this one-of-a-kind deep maroon dress, beautifully crafted in authentic Sindhi Ajrak style. A premium outfit that fuses intricate hand printing with exquisite hand-sewn sequins for a truly luxurious look.",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "60",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "red",
+        "colorCode": "#DB4444",
+        "colorImage": "/images/product/color/underwear-red.png",
+        "image": "/images/product/fashion/100-1.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/100-1.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/100-1.jpg"
+    ],
+    "description": "Timeless Elegance ",
+    "action": "quick shop",
+    "slug": "t-shirt"
+  },
+  {
+    "id": "61",
+    "category": "fashion",
+    "type": "swimwear",
+    "name": "T-shirt Pockets",
+    "gender": "women",
+    "new": false,
+    "sale": true,
+    "rate": 5,
+    "price": 19,
+    "originPrice": 27,
+    "brand": "nike",
+    "sold": 12,
+    "quantity": 100,
+    "quantityPurchase": 1,
+    "sizes": ["S", "M", "L", "XL", "2XL"],
+    "variation": [
+      {
+        "color": "yellow",
+        "colorCode": "#ECB018",
+        "colorImage": "/images/product/color/underwear-white.png",
+        "image": "/images/product/fashion/101-1.jpg"
+      }
+    ],
+    "thumbImage": [
+      "/images/product/fashion/101-1.jpg"
+    ],
+    "images": [
+      "/images/product/fashion/101-1.jpg"
+    ],
+    "description": "Grace meets sophistication in *Graphite Allure* – a light grey masterpiece adorned with elegant block prints, redefining timeless style.",
     "action": "quick shop",
     "slug": "t-shirt"
   }
