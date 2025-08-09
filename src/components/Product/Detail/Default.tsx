@@ -43,6 +43,10 @@ const Default: React.FC<Props> = ({ data, productId }) => {
     const { openModalWishlist } = useModalWishlistContext()
     const { addToCompare, removeFromCompare, compareState } = useCompare();
     const { openModalCompare } = useModalCompareContext()
+    
+    // WhatsApp configuration
+    const WHATSAPP_NUMBER = "+923355832999"; // Replace with your actual WhatsApp number
+    
     let productMain = data.find(product => product.id === productId) as ProductType
     if (productMain === undefined) {
         productMain = data[0]
@@ -135,7 +139,17 @@ const Default: React.FC<Props> = ({ data, productId }) => {
         setActiveTab(tab)
     }
 
-
+    const handleWhatsAppClick = () => {
+        const phoneNumber = "923355832999"; // Seller's number
+        const currentUrl = window.location.href; // this will be like http://localhost:3000/product/default?id=7
+        const message = `Hello, I am interested in this product: ${currentUrl}`;
+        
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappLink, "_blank");
+      };
+           
+      
+      
     return (
         <>
             <div className="product-detail default">
@@ -253,8 +267,13 @@ const Default: React.FC<Props> = ({ data, productId }) => {
                                 </div>
                              
                                 <div className="button-block mt-5">
-                                    <div className="button-main flex flex-row w-full justify-center gap-4 text-center">
-                                        <FaWhatsapp style={{ color: 'white', fontSize: '22px' }}/>Whatsapp</div>
+                                    <button 
+                                        className="button-main flex flex-row w-full justify-center gap-4 text-center items-center bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+                                        onClick={handleWhatsAppClick}
+                                    >
+                                        <FaWhatsapp style={{ color: 'white', fontSize: '22px' }}/>
+                                        Buy it Now
+                                    </button>
                                 </div>
                                 <div className="flex items-center lg:gap-20 gap-8 mt-5 pb-6 border-b border-line">
                                    

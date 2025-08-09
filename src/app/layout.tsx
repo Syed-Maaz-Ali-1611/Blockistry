@@ -1,5 +1,6 @@
+// layout.tsx
 import type { Metadata } from 'next'
-import { Instrument_Sans } from 'next/font/google'
+import { Inter } from 'next/font/google' // using Inter as example
 import '@/styles/styles.scss'
 import GlobalProvider from './GlobalProvider'
 import ModalCart from '@/components/Modal/ModalCart'
@@ -10,9 +11,10 @@ import ModalCompare from '@/components/Modal/ModalCompare'
 import CountdownTimeType from '@/type/CountdownType'
 import { countdownTime } from '@/store/countdownTime'
 
-const serverTimeLeft: CountdownTimeType = countdownTime();
+const serverTimeLeft: CountdownTimeType = countdownTime()
 
-const instrument = Instrument_Sans({ subsets: ['latin'] })
+// If you want Instrument Sans, load it manually in globals.scss or via <link>
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Blockistry',
@@ -27,7 +29,14 @@ export default function RootLayout({
   return (
     <GlobalProvider>
       <html lang="en">
-        <body className={instrument.className}>
+        <head>
+          {/* Manual load for Instrument Sans */}
+          <link
+            href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+          />
+        </head>
+        <body className={inter.className}>
           {children}
           <ModalCart serverTimeLeft={serverTimeLeft} />
           <ModalWishlist />
