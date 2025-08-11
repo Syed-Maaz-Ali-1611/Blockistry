@@ -68,7 +68,7 @@ const TopNavOne: React.FC<Props> = ({ props, slogan }) => {
                             <Link href={'https://www.facebook.com/blockistry.pk'} target='_blank'>
                                 <i className="icon-facebook text-white"></i>
                             </Link>
-                            <Link href={'https://www.instagram.com/block.istry?utm_source=qr&igsh=MXVmcHhpNXkxNzJvcw=='} target='_blank'>
+                            <Link href={'https://www.instagram.com/block.istry'} target='_blank'>
                                 <i className="icon-instagram text-white"></i>
                             </Link>
                             {/* <Link href={'https://www.youtube.com/'} target='_blank'>
