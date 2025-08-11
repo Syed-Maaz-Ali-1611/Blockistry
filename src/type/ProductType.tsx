@@ -24,7 +24,7 @@ export interface ProductType {
     variation: Variation[], // donot need this
     thumbImage: Array<string>,
     images: Array<string>,
-    description: string,
+  description: string | string[]; // ← allow both
     action: string,
     slug: string
 }
