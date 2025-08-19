@@ -33,7 +33,7 @@ const Footer = () => {
                                         <div className="text-button-uppercase pb-3">Pages</div>
                                       
                                         <Link className='caption1 has-line-before duration-300 w-fit pt-2' href={'/'}>Home</Link>
-                                        <Link className='caption1 has-line-before duration-300 w-fit pt-2' href={'/shop/breadcrumb1'}>Shop</Link>
+                                        <Link className='caption1 has-line-before duration-300 w-fit pt-2' href={'/shop'}>Shop</Link>
                                         <Link className='caption1 has-line-before duration-300 w-fit pt-2' href={'/pages/about'}>About Us</Link>
 
                                     </div>

@@ -236,7 +236,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
             
             <li>
               <Link
-                href="/shop/breadcrumb1"
+                href="/shop"
                 className="text-xl font-semibold flex items-center justify-between mt-5"
               >
                 Shop
